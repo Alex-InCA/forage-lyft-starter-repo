@@ -11,6 +11,7 @@ class CarFactory:
         engine = CapuletEngine(current_mileage, last_service_mileage)
         battery = SpindlerBattery(current_date, last_service_date)
         car = Car(engine, battery)
+        print("I am carFactory")
         return car
         
      @staticmethod

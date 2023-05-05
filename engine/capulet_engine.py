@@ -7,4 +7,5 @@ class CapuletEngine(Engine):
         self.last_service_mileage = last_service_mileage
 
     def needs_service(self):
+        #print("self.current_mileage - self.last_service_mileage is {}".format(str(self.current_mileage - self.last_service_mileage)))
         return self.current_mileage - self.last_service_mileage > 30000
