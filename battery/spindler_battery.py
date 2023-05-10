@@ -3,7 +3,7 @@ from battery.battery import Battery
 
 
 class SpindlerBattery(Battery):
-	def __init__(self, last_service_date, current_date):
+	def __init__(self, current_date, last_service_date):
 		current_date = datetime.now() if current_date == None else current_date
 		print(current_date)
 		self.last_service_date = last_service_date

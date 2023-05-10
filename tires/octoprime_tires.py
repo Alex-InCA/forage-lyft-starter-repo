@@ -2,7 +2,7 @@ from typing import List
 from tires.tires import Tires
 
 
-class octoprimeTires(Tires):
+class OctoprimeTires(Tires):
     def __init__(self, current_sensors_numbers: List[float]):
         self.current_sensors_numbers = current_sensors_numbers
 
