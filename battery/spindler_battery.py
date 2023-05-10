@@ -13,4 +13,4 @@ class SpindlerBattery(Battery):
 	def needs_service(self):
 		diff_seconds = (self.current_date - self.last_service_date).total_seconds()
 		diff_years = round(diff_seconds / 31536000, 2)
-		return diff_years > 2
+		return diff_years > 3
